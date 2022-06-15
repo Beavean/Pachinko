@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08A00D89285A314400BCBB7F /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 08A00D88285A314400BCBB7F /* FireParticles.sks */; };
+		08A00D8F285A340700BCBB7F /* smokeEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 08A00D8E285A340700BCBB7F /* smokeEmitter.sks */; };
 		08BDDB112858B85A002F1EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BDDB102858B85A002F1EA2 /* AppDelegate.swift */; };
 		08BDDB132858B85A002F1EA2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 08BDDB122858B85A002F1EA2 /* GameScene.sks */; };
 		08BDDB172858B85A002F1EA2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BDDB162858B85A002F1EA2 /* GameScene.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08A00D88285A314400BCBB7F /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
+		08A00D8E285A340700BCBB7F /* smokeEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smokeEmitter.sks; sourceTree = "<group>"; };
 		08BDDB0D2858B85A002F1EA2 /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BDDB102858B85A002F1EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08BDDB122858B85A002F1EA2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				08BDDB1A2858B85A002F1EA2 /* Main.storyboard */,
 				08BDDB1D2858B85C002F1EA2 /* Assets.xcassets */,
 				08BDDB1F2858B85C002F1EA2 /* LaunchScreen.storyboard */,
+				08A00D88285A314400BCBB7F /* FireParticles.sks */,
+				08A00D8E285A340700BCBB7F /* smokeEmitter.sks */,
 			);
 			path = Pachinko;
 			sourceTree = "<group>";
@@ -126,8 +132,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A00D8F285A340700BCBB7F /* smokeEmitter.sks in Resources */,
 				08BDDB1C2858B85A002F1EA2 /* Main.storyboard in Resources */,
 				08BDDB132858B85A002F1EA2 /* GameScene.sks in Resources */,
+				08A00D89285A314400BCBB7F /* FireParticles.sks in Resources */,
 				08BDDB1E2858B85C002F1EA2 /* Assets.xcassets in Resources */,
 				08BDDB212858B85C002F1EA2 /* LaunchScreen.storyboard in Resources */,
 			);
