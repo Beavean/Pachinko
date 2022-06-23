@@ -14,8 +14,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func restartButton() {
         let gameScene = GameScene(size: self.size)
-        gameScene.scaleMode = SKSceneScaleMode.aspectFill
+        gameScene.scaleMode = SKSceneScaleMode.fill
         self.scene!.view?.presentScene(gameScene)
+        
     }
     
     var score = 0 {
@@ -55,23 +56,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
         scoreLabel.text = "Score: 0"
         scoreLabel.horizontalAlignmentMode = .right
-        scoreLabel.position = CGPoint(x: 970, y: 600)
+        scoreLabel.position = CGPoint(x: 970, y: 720)
         addChild(scoreLabel)
         
         ballsLabel = SKLabelNode(fontNamed: "Chalkduster")
         ballsLabel.text = "Balls: 5"
         ballsLabel.horizontalAlignmentMode = .right
-        ballsLabel.position = CGPoint(x: 750, y: 600)
+        ballsLabel.position = CGPoint(x: 750, y: 720)
         addChild(ballsLabel)
         
         editLabel = SKLabelNode(fontNamed: "Chalkduster")
         editLabel.text = "Edit"
-        editLabel.position = CGPoint(x: 250, y: 600)
+        editLabel.position = CGPoint(x: 250, y: 720)
         addChild(editLabel)
         
         restartLabel = SKLabelNode(fontNamed: "Chalkduster")
         restartLabel.text = "Restart"
-        restartLabel.position = CGPoint(x: 120, y: 600)
+        restartLabel.position = CGPoint(x: 100, y: 720)
         addChild(restartLabel)
         
         
@@ -120,7 +121,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
                 ball.physicsBody?.restitution = 0.4
                 ball.physicsBody?.contactTestBitMask = ball.physicsBody?.collisionBitMask ?? 0
-                ball.position = CGPoint(x: location.x, y: 550)
+                ball.position = CGPoint(x: location.x, y: 700)
                 ball.name = "ball"
                 addChild(ball)
             }
